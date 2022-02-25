@@ -9,4 +9,8 @@ spec:
   eventSeverity: info
   eventSources:
   - kind: HelmRelease
-    name: "*"
+    name: '*'
+  - kind: HelmChart
+    name: '*'
+  - kind: Kustomization
+    name: '*'
