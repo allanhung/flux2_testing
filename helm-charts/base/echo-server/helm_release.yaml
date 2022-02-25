@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: echo-server
+spec:
+  releaseName: echo-server
+  targetNamespace: infra
+  chart:
+    spec:
+      chart: echo-server
+      sourceRef:
+        kind: HelmRepository
+        name: organization
+        namespace: flux-system
+  valuesFrom:
+  - kind: ConfigMap
+    name: echo-server-values
+    valuesKey: values.yaml
+  - kind: ConfigMap
+    name: echo-server-values
+    valuesKey: values.env.yaml
+  interval: 1m

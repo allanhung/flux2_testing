@@ -1,0 +1,12 @@
+image:
+  repository: ealen/echo-server
+  tag: 0.4.2
+
+serviceAccount:
+  create: false
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true

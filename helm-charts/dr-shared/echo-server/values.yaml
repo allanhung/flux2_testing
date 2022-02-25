@@ -1,0 +1,11 @@
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-issuer
+  hosts:
+    - host: echo-server.my-domain.com
+      paths:
+        - /
+  tls:
+    - hosts:
+        - echo-server.my-domain.com
+      secretName: echo-server.my-domain.com-tls
