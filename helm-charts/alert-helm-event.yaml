@@ -1,0 +1,19 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: helm-event
+  namespace: flux-system
+spec:
+  providerRef:
+    name: msteams
+  eventSeverity: info
+  eventSources:
+  - kind: GitRepository
+    namespace: '*'
+    name: '*'
+  - kind: Kustomization
+    namespace: '*'
+    name: '*'
+  - kind: HelmRelease
+    namespace: '*'
+    name: '*'
