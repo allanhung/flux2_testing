@@ -8,4 +8,4 @@ ingress:
   tls:
     - hosts:
         - echo-server.my-domain.com
-      secretName: tls-echo-server.my-domain.com
+      secretName: echo-server.my-domain.com-tls
