@@ -9,8 +9,5 @@ spec:
   eventSeverity: info
   eventSources:
   - kind: HelmRelease
-    name: '*'
-  - kind: HelmChart
-    name: '*'
-  - kind: Kustomization
+    namespace: infra
     name: '*'
