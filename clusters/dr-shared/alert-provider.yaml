@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   type: msteams
-  address: "https://netbase2016.webhook.office.com/webhookb2/5ebc3e18-7106-431e-8b33-bdd8e97a1a82@77287fa5-1d4b-4908-8dc3-d9d20280f8be/IncomingWebhook/2f8091f24d934ffca250ba51c60d9e21/cf67ec5d-3fb2-491e-8eb4-4cfb92fed1ce"
+  address: "https://netbase2016.webhook.office.com/webhookb2/5ebc3e18-7106-431e-8b33-bdd8e97a1a82@77287fa5-1d4b-4908-8dc3-d9d20280f8be/IncomingWebhook/f0f6c50dad794722924100fa7461d362/cf67ec5d-3fb2-491e-8eb4-4cfb92fed1ce"
