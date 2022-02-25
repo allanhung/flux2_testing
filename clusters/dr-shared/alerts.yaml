@@ -1,0 +1,19 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: alerts
+spec:
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: ./alerts
+  prune: true
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: msteams
+spec:
+  type: msteams
+  address: "https://netbase2016.webhook.office.com/webhookb2/5ebc3e18-7106-431e-8b33-bdd8e97a1a82@77287fa5-1d4b-4908-8dc3-d9d20280f8be/IncomingWebhook/2f8091f24d934ffca250ba51c60d9e21/cf67ec5d-3fb2-491e-8eb4-4cfb92fed1ce"
